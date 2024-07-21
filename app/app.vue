@@ -1,15 +1,8 @@
-<script setup lang="ts">
-import HomeView from '~/Views/HomeView.vue'
-import NavigationComponent from '~/Components/NavigationComponent.vue'
-</script>
-
+<script setup lang="ts"></script>
 <template>
-  <div>
-    <!--    <NuxtRouteAnnouncer />-->
-    <NavigationComponent />
-    <!--    <NuxtWelcome /> -->
-    <HomeView />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 <style>
 body {
