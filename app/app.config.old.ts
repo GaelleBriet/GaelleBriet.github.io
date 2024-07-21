@@ -1,8 +1,8 @@
 export default defineAppConfig({
-    title: 'Hello Nuxt',
-    ui: {
-        primary: 'purple',
-        gray: 'cool',
-        // icons: ['heroicons', 'simple-icons']
-    },
+  title: 'Hello Nuxt',
+  ui: {
+    primary: 'purple',
+    gray: 'cool',
+    // icons: ['heroicons', 'simple-icons']
+  },
 })

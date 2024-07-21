@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxt/icon"],
+  modules: ['@nuxt/ui', '@nuxt/icon', '@nuxt/eslint'],
   colorMode: {
-    preference: 'light'
+    preference: 'light',
   },
   ui: {
     icons: ['heroicons', 'simple-icons'],
@@ -13,10 +13,17 @@ export default defineNuxtConfig({
   postcss: {
     plugins: {
       'postcss-nested': {},
-      "postcss-import": {},
-      "tailwindcss/nesting": {},
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
+      // eslint-disable-next-line @stylistic/quote-props
       tailwindcss: {},
+      // eslint-disable-next-line @stylistic/quote-props
       autoprefixer: {},
-    }
+    },
+  },
+  eslint: {
+    config: {
+      stylistic: true, // Active les règles de style (optionnel)
+    },
   },
 })
