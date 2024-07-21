@@ -50,7 +50,7 @@ const linksRight = [
           :links="linksRight"
           class="border-b border-gray-200 dark:border-gray-800 flex justify-center"
         />
-        <div class="flex items-center">
+        <div class="flex items-center ms-2.5">
           <UButton
             :ui="{ rounded: 'rounded-2xl' }"
             label="button"
