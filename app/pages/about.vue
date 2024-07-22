@@ -22,12 +22,16 @@
       </div>
       <div class="flex flex-row">
         <img src="assets/img/github.png" class="h-8 w-8 me-4 cursor-pointer" alt="github link" />
-        <img
-          src="../assets/img/linkedin.png"
-          class="h-8 w-8 me-4 cursor-pointer"
-          alt="linkedin link"
-        />
-        <img src="../assets/img/gmail.png" class="h-10 w-10 cursor-pointer" alt="mail link" />
+        <ULink to="https://www.linkedin.com/in/gaelle-briet-1b1b3b1b3/">
+          <img
+            src="../assets/img/linkedin.png"
+            class="h-8 w-8 me-4 cursor-pointer"
+            alt="linkedin link"
+          />
+        </ULink>
+        <a href="mailto:gaelle.briet@pronmail.com">
+          <img src="../assets/img/gmail.png" class="h-10 w-10 cursor-pointer" alt="mail link" />
+        </a>
       </div>
       <div class="flex justify-start space-x-3 mb-28">
         <UButton
