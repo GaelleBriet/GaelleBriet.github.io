@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: '/gaellebriet.github.io/', // Remplacez par le nom de votre repo si différent
+    baseURL: '/', // Remplacez par le nom de votre repo si différent
   },
   ssr: false, // Pour une Single Page Application
 })
