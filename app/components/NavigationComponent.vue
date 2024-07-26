@@ -1,19 +1,21 @@
 <script setup lang="ts">
+import { resumeDownload } from '~/services/resumeDownload'
+
 const route = useRoute()
 
 const links = [
   {
-    label: 'Home',
+    label: 'Accueil',
     icon: 'i-heroicons-home',
     to: '/',
   },
   {
-    label: 'About',
+    label: 'À propos',
     icon: 'i-heroicons-information-circle',
     to: '/about',
   },
   {
-    label: 'Projects',
+    label: 'Projets',
     icon: 'i-heroicons-folder-open',
     to: '/projects',
   },
@@ -28,12 +30,22 @@ const linksRight = [
   {
     label: 'GitHub',
     icon: 'i-heroicons-arrow-top-right-on-square',
+    to: 'https://github.com/GaelleBriet',
+    target: '_blank',
+    rel: 'noopener noreferrer',
   },
   {
     label: 'Linkedin',
     icon: 'i-heroicons-arrow-top-right-on-square',
+    to: 'https://www.linkedin.com/in/gaelle-briet-666184227/',
+    target: '_blank',
+    rel: 'noopener noreferrer',
   },
 ]
+
+const onDownload = () => {
+  resumeDownload()
+}
 </script>
 
 <template>
@@ -53,12 +65,13 @@ const linksRight = [
         <div class="flex items-center ms-2.5">
           <UButton
             :ui="{ rounded: 'rounded-2xl' }"
-            label="button"
+            label="Télécharger mon C.V."
             size="sm"
             variant="outline"
             icon="i-heroicons-arrow-down-tray"
             trailing
             class="px-3 py-1.5"
+            @click="onDownload"
           ></UButton>
         </div>
       </div>

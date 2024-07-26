@@ -122,7 +122,12 @@ function renderRecaptcha() {
 
         <div id="recaptcha-container" class="mb-4"></div>
 
-        <UButton type="submit" color="primary" :loading="isSubmitting">
+        <UButton
+          type="submit"
+          color="primary"
+          :loading="isSubmitting"
+          class="rounded-2xl px-3 py-1.5"
+        >
           Envoyer <UIcon name="i-heroicons-paper-airplane-20-solid" />
         </UButton>
       </UForm>
