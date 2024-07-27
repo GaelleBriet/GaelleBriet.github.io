@@ -59,7 +59,7 @@ const onProjects = () => {
             <div class="flex justify-start space-x-3">
               <UButton
                 :ui="{ rounded: 'rounded-3xl' }"
-                label="contact"
+                label="Contact"
                 size="sm"
                 variant="solid"
                 trailing
@@ -68,14 +68,14 @@ const onProjects = () => {
               ></UButton>
               <UButton
                 :ui="{ rounded: 'rounded-3xl' }"
-                label="projects"
+                label="Projets"
                 size="sm"
                 variant="outline"
                 trailing
                 class="px-5 py-2.5"
                 @click="onProjects"
               ></UButton>
-            </div>
+            </div
           </template>
         </UCard>
       </div>
