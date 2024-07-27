@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       stylistic: true, // Active les règles de style (optionnel)
     },
   },
+  target: 'static',
   app: {
     baseURL: '/GaelleBriet.github.io/',
   },
