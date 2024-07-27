@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
   target: 'static',
   app: {
-    baseURL: '/GaelleBriet.github.io/',
+    baseURL: '/',
   },
   ssr: false,
 })
