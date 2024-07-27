@@ -29,5 +29,5 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/GaelleBriet.github.io/',
   },
-  ssr: true, 
+  ssr: false,
 })
