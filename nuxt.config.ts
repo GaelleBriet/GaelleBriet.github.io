@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: '/', // Remplacez par le nom de votre repo si différent
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
   },
   ssr: false, // Pour une Single Page Application
 })
