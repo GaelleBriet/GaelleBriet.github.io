@@ -75,7 +75,7 @@ const onProjects = () => {
                 class="px-5 py-2.5"
                 @click="onProjects"
               ></UButton>
-            </div
+            </div>
           </template>
         </UCard>
       </div>
